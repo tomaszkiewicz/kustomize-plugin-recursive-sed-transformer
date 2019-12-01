@@ -1,0 +1,4 @@
+bases:
+- ../../common/test-service
+transformers:
+- ../../common/sedtransformer.yaml

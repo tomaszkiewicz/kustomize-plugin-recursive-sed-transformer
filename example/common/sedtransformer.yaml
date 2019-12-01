@@ -1,0 +1,4 @@
+apiVersion: kustomize.luktom.net
+kind: RecursiveSedTransformer
+metadata:
+  name: sed

@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test
+spec:
+  rules:
+  - host: test.common.luktom.net
+    http:
+      paths:
+      - backend:
+          serviceName: test
+          servicePort: http
+  tls:
+  - hosts:
+    - test.common.luktom.net
+    secretName: test-tls

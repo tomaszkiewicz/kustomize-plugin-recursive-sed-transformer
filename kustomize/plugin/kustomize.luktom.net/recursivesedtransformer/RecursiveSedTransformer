@@ -1,0 +1,14 @@
+#!/bin/bash
+
+d=$(pwd)
+input=$(cat -)
+
+while [ "$d" != "/" ]; do
+  if [ -e "$d/script.sed" ]; then
+    input=$(echo "$input" | sed -f "$d/script.sed")
+  fi
+
+  d=$(dirname $d)
+done
+
+echo "$input"
