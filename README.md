@@ -1,7 +1,7 @@
 # Recursive sed transformer
 
 This is a plugin for kustomize that transforms output from `kustomize build` and processes it using sed scripts.
-The script looks for `script.sed` files in a recursive way - starting from the directory with kustomization overlay, going up directory tree unit it reaches root directory /.
+The script looks for `script.sed` files in a recursive way - starting from the directory with kustomization overlay, going up directory tree until it reaches root directory /.
 
 # Use cases
 
